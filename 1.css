@@ -1,0 +1,142 @@
+*{margin: 0;padding: 0;}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    
+}
+.main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    
+}
+.title{
+    z-index: 10;
+    top: 20px;
+    margin-left: 50%;
+    font-size: 40px;
+    position: absolute;
+}
+.images{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    animation: chuyen 50s infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+@keyframes chuyen {
+    10%{background-image: url(images/anh2.jpg);transform: scale(1)}
+    20%{background-image: url(images/anh2.jpg);transform: scale(1.5)}
+    30%{background-image: url(images/anh3.jpg);transform: scale(1)}
+    40%{background-image: url(images/anh3.jpg);transform: scale(1.5)}
+    50%{background-image: url(images/anh5.jpg);transform: scale(1)}
+    60%{background-image: url(images/anh5.jpg);transform: scale(1.5)}
+    70%{background-image: url(images/anh6.jpg);transform: scale(1)}
+    80%{background-image: url(images/anh6.jpg);transform: scale(1.5)}
+    90%{background-image: url(images/anh7.jpg);transform: scale(1)}
+    100%{background-image: url(images/anh7.jpg);transform: scale(1.5)}
+}
+.khoi{
+    width: 25%;
+    height: 100%;
+   position: relative;
+    float: left;
+    
+}
+.khoi .nen{
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 340px;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    float: left;
+}
+.khoi:hover .nen{
+    opacity: 1;
+    transition: 0.5s;
+}
+.khoi .nd{
+    position: absolute;
+    color: white;
+    z-index: 5;
+  
+   width: 340px;
+}
+
+.khoi .nd .textbig{
+    padding-top: 300px;
+    padding-left: 124px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+   opacity: 1;
+    text-align: center;
+}
+.khoi:hover .nd .boxbig{
+    opacity: 1;
+    transform: translateY(0);
+}
+.khoi .nd .boxbig{
+    top: 350px;
+    left: 80px;
+    position: absolute;
+    font-size: 18px;
+    background-color: rgb(70, 56, 110, 0.466);
+    font-style: italic;
+    width: 170px;
+    text-align: center;
+    height: 30px;
+    border-radius: 15px;
+    transform: translateY(-30px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 4;
+}
+
+.khoi  .textbottom{
+    bottom: 100px;
+    left: 124px;
+    position: absolute;
+    font-size: 23px;
+    font-weight: bold;
+    opacity: 0;
+    text-align: center;
+    z-index: 4;
+    color: white;
+    transform: translateY(50px);
+}
+.khoi:hover .bottom .textbottom{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.khoi .boxsmall{
+    bottom: 70px;
+    left: 35%;
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 0;
+    text-align: center;
+    z-index: 4;
+    color: white;
+   
+    transform: translateY(50px);
+
+}
+.khoi:hover .bottom .boxsmall{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
